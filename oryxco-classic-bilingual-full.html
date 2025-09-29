@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+  <title>OryxCo Services W.L.L</title>
+  <style>
+    :root{
+      --primary:#162b46;
+      --secondary:#49c1ec;
+      --white:#ffffff;
+      --gray:#e0e0e0;
+      --text:#162b46;
+      --muted:#4a6070;
+      --radius:16px;
+      --shadow:0 12px 32px rgba(0,0,0,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--text);
+      background:var(--white);
+    }
+    .container{max-width:900px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:24px 0 8px}
+    h1{font-size:clamp(20px,2.5vw,28px);margin:0;font-weight:700;letter-spacing:-.02em;color:var(--primary)}
+    .tag{color:var(--muted);font-size:14px}
+    .card{background:var(--white);border:1px solid var(--gray);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+    .center{text-align:center}
+    .subtitle{margin:14px 0 6px;font-weight:800;font-size:clamp(18px,2vw,22px);color:var(--primary)}
+    .muted{color:var(--muted);max-width:700px;margin:0 auto}
+    .socials{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-width:48px;height:48px;border:1px solid var(--gray);background:var(--white);border-radius:12px;text-decoration:none;color:var(--primary);font-weight:700;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,.04);transition:transform .08s ease, box-shadow .2s ease, filter .2s ease}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.12);filter:brightness(1.05)}
+    .btn svg{width:22px;height:22px;fill:var(--secondary)}
+    .grid{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:28px}
+    .member{padding:18px;text-align:center;position:relative;overflow:visible;display:flex;flex-direction:column;align-items:center;width:200px;transition:transform .2s ease}
+    .member:hover{transform:translateY(-4px)}
+    .avatar{width:104px;height:104px;border-radius:999px;object-fit:cover;border:2px solid var(--secondary);background:#fff;display:block;margin:0 auto;box-shadow:0 10px 26px rgba(73,193,236,.25)}
+    .name{margin:10px 0 2px;font-weight:800;color:var(--primary)}
+    .title{margin:0;color:var(--muted);font-size:14px}
+    .details{opacity:0;max-height:0;overflow:hidden;transition:opacity .3s ease,max-height .3s ease;font-size:13px;color:var(--muted);margin-top:8px}
+    .member:hover .details{opacity:1;max-height:200px}
+    footer{color:var(--muted);text-align:center;font-size:12px;padding:24px 0 32px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="display:flex;align-items:center;gap:12px">
+        <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHM1-_WJ9zMjg/company-logo_200_200/B4DZlX9XlrGQAM-/0/1758117330316?e=1761782400&v=beta&t=TAEOLFMnb9OrkakCIXiJ2JjccxQxqWzP5nMqwQxzI3c" alt="OryxCo logo" width="100" height="100" style="display:block"/>
+        <h1 id="company-name">OryxCo Services W.L.L</h1>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <button id="lang-toggle" type="button" class="btn" aria-pressed="false"></button>
+      </div>
+    </header>
+
+    <section class="card center">
+      <div id="scan-title" class="subtitle">Your Growth Partner</div>
+      <p class="muted">Fresh gradient background with airy cards and brighter shadows.</p>
+
+      <div class="socials">
+        <a class="btn" href="https://www.facebook.com/profile.php?id=61580321344284" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+        <a class="btn" href="https://www.instagram.com/oryxco_qa/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+        <a class="btn" href="https://www.linkedin.com/company/oryxco-qa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+        <a class="btn" href="https://www.tiktok.com/@oryxco_qa" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok fa-2xl"></i></a>
+        <a class="btn" href="https://www.snapchat.com/@oryxco_qa" target="_blank" aria-label="Snapchat"><i class="fa-brands fa-snapchat fa-2xl"></i></a>
+        <a class="btn" href="https://www.oryxco.com" target="_blank" aria-label="Website"><i class="fa-solid fa-earth-americas fa-2xl"></i></i></a>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 id="team-title" class="subtitle" style="text-align:center">Office Team</h2>
+      <div class="grid">
+        <div class="card member">
+          <img class="avatar" src="https://media.licdn.com/dms/image/v2/D4D03AQEdkHyYJH4jPA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715358888648?e=1761782400&v=beta&t=AGE2_6dqYAs8V4cs_VM00JNHA2IDsXw492Os7I6E6-0" alt="No Preview" />
+          <div class="name" id="name-founder"></div>
+          <p class="title" id="title-founder"></p>
+          <div class="details">ceo@oryxco.com<br/>+974 7045 7879</div>
+        </div>
+        <div class="card member">
+          <img class="avatar" src="https://placehold.co/240x240" alt="John Smith" />
+          <div class="name" id="name-2"></div>
+          <p class="title" id="title-2"></p>
+          <div class="details">operations@oryxco.com<br/>+974 3375 5401</div>
+        </div>
+        <div class="card member">
+          <img class="avatar" src="https://media.licdn.com/dms/image/v2/D4D03AQGeAn5PHcy8Aw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725658674359?e=1761782400&v=beta&t=cnGLzwHlxVF5KTcJkWuYDhVBYjAc0XyPEqF6Gp7RQcw" alt="Emily Clark" />
+          <div class="name" id="name-3"></div>
+          <p class="title" id="title-3"></p>
+          <div class="details">IT@oryxco.com<br/>+974 3135 8814</div>
+        </div>
+        <div class="card member">
+          <img class="avatar" src="https://media.licdn.com/dms/image/v2/D4D03AQEe1FHYAIfYNg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707385895804?e=1761782400&v=beta&t=1X3Ak7LSzEU7w5P_Y0bieECP4D6MRQ_6bd3X5hF3oEc" alt="Michael Lee" />
+          <div class="name" id="name-4"></div>
+          <p class="title" id="title-4"></p>
+          <div class="details">pro@oryxco.com<br/>+974 3997 0765</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> OryxCo. All rights reserved.</footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const htmlEl = document.documentElement;
+    const langBtn = document.getElementById('lang-toggle');
+    function setLang(lang){
+      if(lang==='ar'){
+        htmlEl.lang = 'ar';
+        htmlEl.dir = 'rtl';
+		document.getElementById('company-name').textContent = 'اوريكسكو للخدمات ذ.م.م';
+        document.getElementById('scan-title').textContent = 'شريك نموّك';
+        document.getElementById('team-title').textContent = 'فريق المكتب';
+        document.getElementById('name-founder').textContent = 'محمد سعيد محمد السليطي';
+        document.getElementById('title-founder').textContent = 'مؤسس الشركة';
+        document.getElementById('name-2').textContent = 'برنارد كاجو';
+        document.getElementById('title-2').textContent = 'قائد العمليات';
+        document.getElementById('name-3').textContent = 'محمد ارقم';
+        document.getElementById('title-3').textContent = 'مساعد إداري';
+        document.getElementById('name-4').textContent = 'احمد الفاضل';
+        document.getElementById('title-4').textContent = 'مدير ادارة';
+        langBtn.textContent = 'English';
+      } else {
+        htmlEl.lang = 'en';
+        htmlEl.dir = 'ltr';
+		document.getElementById('company-name').textContent = 'OryxCo Services W.L.L';
+        document.getElementById('scan-title').textContent = 'Your Growth Partner';
+        document.getElementById('team-title').textContent = 'Office Team';
+        document.getElementById('name-founder').textContent = 'Mohammed Saeed M A AlSulaiti';
+        document.getElementById('title-founder').textContent = 'Founder';
+        document.getElementById('name-2').textContent = 'Bernard Kago';
+        document.getElementById('title-2').textContent = 'Operations Lead';
+        document.getElementById('name-3').textContent = 'Muhammad Arqam';
+        document.getElementById('title-3').textContent = 'ِAdmin Asistant';
+        document.getElementById('name-4').textContent = 'Ahmed AlFadil';
+        document.getElementById('title-4').textContent = 'Manager';
+        langBtn.textContent = 'العربية';
+      }
+    }
+    langBtn.addEventListener('click', ()=>{
+      const next = (htmlEl.lang === 'ar') ? 'en' : 'ar';
+      setLang(next);
+      langBtn.setAttribute('aria-pressed', next==='ar');
+    });
+    setLang('en');
+  </script>
+</body>
+</html>
